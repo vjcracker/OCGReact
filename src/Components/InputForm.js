@@ -17,7 +17,7 @@ const InputForm = () => {
       .then((response) => {
         console.log(response.data);
         console.log(response.data.message);
-        setBotResponse(response.data.message);
+        setBotResponse(response.data);
       })
       .catch((error) => {
         console.error(error);
