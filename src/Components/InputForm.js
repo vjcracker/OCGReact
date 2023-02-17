@@ -13,7 +13,7 @@ const InputForm = () => {
     e.preventDefault();
     // Make API call with the input value here
     axios
-      .get(`https://oncallgenie.azurewebsites.net/api/oncallgenie${inputValue}`)
+      .get(`https://oncallgenie.azurewebsites.net/api/oncallgenie?query=${inputValue}`)
       .then((response) => {
         console.log(response.data);
         console.log(response.data.message);
