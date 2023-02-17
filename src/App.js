@@ -1,8 +1,14 @@
-import React from 'react';
+import React from "react";
 
-function App() {
-  const value = 'World';
-  return <div>Hello {value}</div>;
-}
+import InputForm from "./Components/InputForm";
+import Form from "./Components/Form";
+
+const App = () => {
+  return (
+    <>
+      <InputForm />
+    </>
+  );
+};
 
 export default App;
